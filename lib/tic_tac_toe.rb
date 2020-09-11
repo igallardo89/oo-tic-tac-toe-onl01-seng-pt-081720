@@ -48,13 +48,21 @@ class TicTacToe
       else
       turn
     end
-    def won?(board)
-       WIN_COMBINATIONS.detect do |combo|
-       @board[combo[0]] == @board[combo[1]] &&
-       @board[combo[1]] == @board[combo[2]] &&
-      position_taken?(@board, combo[0])
+    def won?
+    a = WIN_COMBINATIONS.find{
+      |combo|
+      @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X"
+    }
+    b = WIN_COMBINATIONS.find{
+      |combo|
+      @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
+    }
+    return a || b
   end
-end
+    
+    
+    
+    
     
  
 end    
