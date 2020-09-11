@@ -66,7 +66,10 @@ end
 
 
 
-
+  if check_win_combo?('X', win_combo)
+      return win_combo
+      elsif check_win_combo?('O', win_combo)
+      return win_combo
 
 
 
