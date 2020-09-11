@@ -72,13 +72,19 @@ class TicTacToe
     
     
     
+    
  
 end    
 end
 
 
 
-
+if won?
+      @board[won?[0]] == "X" ? "X" : "O"
+    else
+      nil
+    end
+  end
 
 
 
