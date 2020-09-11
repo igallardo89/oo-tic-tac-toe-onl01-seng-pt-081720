@@ -77,12 +77,15 @@ class TicTacToe
   end
   
   def play 
-    @board = Array.new(9," ")
-    turn until over?
-    won? ? puts("Congratulations #{winner}!") : puts("Cat's Game!")
-    puts "Would you like to play again? (Y or N)"
-    gets.strip.downcase == "y" || gets.strip.downcase == "yes" ? play : puts("Goodbye!")
+  while !over?
+    turn
   end
+  if won?
+    puts "Congratulations #{winner}!"
+  elsif draw?
+    puts "Cat's Game!"
+  end
+end
 end    
 end
 
