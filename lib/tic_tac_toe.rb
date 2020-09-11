@@ -49,12 +49,7 @@ class TicTacToe
       turn
     end
     def won?
-      WIN_COMBINATIONS.detect do |combo|
-      @board[combo[0]] == @board[combo[1]] &&
-      @board[combo[1]] == @board[combo[2]] &&
-      position_taken?(@board, combo[0])
-      
-   end
+     
  
  end
  
@@ -65,11 +60,6 @@ end
 
 
 
-
-  if check_win_combo?('X', win_combo)
-      return win_combo
-      elsif check_win_combo?('O', win_combo)
-      return win_combo
 
 
 
