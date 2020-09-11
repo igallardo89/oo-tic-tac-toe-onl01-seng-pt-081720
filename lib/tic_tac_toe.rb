@@ -49,9 +49,32 @@ class TicTacToe
       turn
     end
     def won?
+      WIN_COMBINATIONS.each do |win_combo|
+        if check_win_comb0?("X", win_combo)
+          return win_combo
+          elsif check_win_combo?("O",win_combo)
+          return win_combo
+        end
+      end
+      return false
+    end
     
 end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
