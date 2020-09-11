@@ -60,6 +60,8 @@ class TicTacToe
     return a || b
   end
   def full?
+    @board.all?{|token| token == "X" || token == "O"}
+  end
     
     
     
