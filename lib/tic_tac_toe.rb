@@ -59,7 +59,7 @@ class TicTacToe
     }
     return a || b
   end
-  def 
+  def full?
     
     
     
