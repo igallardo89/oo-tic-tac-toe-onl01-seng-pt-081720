@@ -55,6 +55,8 @@ class TicTacToe
       position_taken?(@board, combo[0])
    end
  end
+ 
+ end
     
 end
 
